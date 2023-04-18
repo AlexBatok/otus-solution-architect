@@ -1,4 +1,4 @@
-package command.impl;
+package command.simple;
 
 import entity.Movable;
 import entity.impl.Vector;

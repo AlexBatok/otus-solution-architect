@@ -1,4 +1,4 @@
-package command.impl;
+package command.simple;
 
 import entity.Rotatable;
 import entity.impl.Direction;
