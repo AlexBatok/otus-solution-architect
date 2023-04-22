@@ -3,7 +3,7 @@ package command.macro;
 import command.simple.BurnFuelCommand;
 import command.simple.CheckFuelCommand;
 import command.simple.MoveCommand;
-import exception.CommandException;
+import exception.command.CommandException;
 import exception.NotEnoughFuelException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

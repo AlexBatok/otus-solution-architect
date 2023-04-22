@@ -3,6 +3,7 @@ package command.simple;
 import command.Command;
 import entity.Movable;
 import entity.impl.Vector;
+import exception.command.MoveCommandException;
 
 public class MoveCommand implements Command {
 
@@ -14,6 +15,10 @@ public class MoveCommand implements Command {
 
     @Override
     public void execute() {
-        movable.setPosition(Vector.plus(movable.getPosition(), movable.getVelocity()));
+        try {
+            movable.setPosition(Vector.plus(movable.getPosition(), movable.getVelocity()));
+        } catch (Exception e) {
+            throw new MoveCommandException(e);
+        }
     }
 }

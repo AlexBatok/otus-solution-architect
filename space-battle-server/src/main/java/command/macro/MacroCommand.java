@@ -1,7 +1,7 @@
 package command.macro;
 
 import command.Command;
-import exception.CommandException;
+import exception.command.CommandException;
 
 import java.util.List;
 
