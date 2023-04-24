@@ -1,8 +1,8 @@
 package command.simple;
 
 import entity.Fuelable;
-import exception.CommandException;
-import exception.NotEnoughFuelException;
+import exception.command.CheckFuelCommandException;
+import exception.command.CommandException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -61,6 +61,6 @@ class CheckFuelCommandTest {
                 .getFuelConsumptionRate();
 
         CommandException e = Assertions.assertThrows(CommandException.class, ()-> checkFuelCommand.execute());
-        assertTrue(e instanceof NotEnoughFuelException);
+        assertTrue(e instanceof CheckFuelCommandException);
     }
 }

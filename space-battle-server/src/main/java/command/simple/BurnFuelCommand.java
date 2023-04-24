@@ -2,6 +2,7 @@ package command.simple;
 
 import command.Command;
 import entity.Fuelable;
+import exception.command.BurnFuelCommandException;
 
 public class BurnFuelCommand implements Command {
     private final Fuelable fuelable;
@@ -12,6 +13,10 @@ public class BurnFuelCommand implements Command {
 
     @Override
     public void execute() {
-        fuelable.setFuelLevel(fuelable.getFuelLevel() - fuelable.getFuelConsumptionRate());
+        try {
+            fuelable.setFuelLevel(fuelable.getFuelLevel() - fuelable.getFuelConsumptionRate());
+        } catch (Exception e) {
+            throw new BurnFuelCommandException(e);
+        }
     }
 }

@@ -1,7 +1,7 @@
 package command.macro;
 
 import command.Command;
-import exception.CommandException;
+import exception.command.CommandException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
