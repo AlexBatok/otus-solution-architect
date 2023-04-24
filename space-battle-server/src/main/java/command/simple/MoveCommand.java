@@ -1,4 +1,4 @@
-package command.impl;
+package command.simple;
 
 import command.Command;
 import entity.Movable;
