@@ -10,9 +10,11 @@ target/
 .idea/libraries/
 .idea/workspace.xml
 .idea/encodings.xml
+.idea/shelf/*
 *.iws
 *.iml
 *.ipr
+*.patch
 
 ### Eclipse ###
 .apt_generated
