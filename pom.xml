@@ -11,6 +11,7 @@
   <modules>
     <module>hw-01-unit-test</module>
       <module>space-battle-server</module>
+      <module>hw-05-ioc</module>
   </modules>
 
   <name>otus-solution-architect</name>
@@ -26,6 +27,12 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
+      <version>5.9.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
       <version>5.9.2</version>
       <scope>test</scope>
     </dependency>
