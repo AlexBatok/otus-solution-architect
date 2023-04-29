@@ -54,4 +54,9 @@ public class MergeSortService implements SortService {
             }
         }
     }
+
+    @Override
+    public String getName() {
+        return "Merge Sort";
+    }
 }

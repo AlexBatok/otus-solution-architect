@@ -19,4 +19,9 @@ public class SelectionSortService implements SortService {
             inputList.set(min, swap);
         }
     }
+
+    @Override
+    public String getName() {
+        return "Selection Sort";
+    }
 }

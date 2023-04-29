@@ -17,4 +17,9 @@ public class InsertionSortService implements SortService {
             inputList.set(i + 1, current);
         }
     }
+
+    @Override
+    public String getName() {
+        return "Insertion Sort";
+    }
 }
